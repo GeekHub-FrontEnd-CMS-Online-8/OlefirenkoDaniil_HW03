@@ -1,0 +1,29 @@
+.container {
+	width: 35%;
+	margin: auto;
+    padding: 10px 100px;
+    background-color: #FFD58C;
+}
+
+fieldset {
+	margin-bottom: 20px;
+}
+
+.que,
+legend {
+	font-weight: bold;
+}
+
+#que {
+	margin-bottom: 0px;
+	font-weight: bold;
+}
+
+#mb {
+	margin-top: 0px;
+	font-style: italic;
+}
+
+body {
+	background-color: #585C5A;
+}

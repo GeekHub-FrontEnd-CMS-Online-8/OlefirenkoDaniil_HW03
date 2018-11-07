@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Forms</title>
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Урок "Формы": теги и их атрибуты.</h1>
+		<h2>Расскажите немного о себе.</h2>
+		<form action="" autocomplete="off">
+		<fieldset>
+			<legend>
+				Коротко о себе
+			</legend>
+			<p><label for="name">Имя: <input type="text" id="name" required></p></label>
+			<p><label for="surname">Фамилия: <input type="text" id="surname" required></p></label>
+			<p><label for="man">Пол:</label>
+			<input type="radio" id="man" name="sex" value="rad1" required>
+			<label for="man">мужской</label>
+			<input type="radio" id="woman" name="sex" value="rad2" required>
+			<label for="woman">женщина</label></p>
+			<label for="age">Возраст:</label>
+			<input type="text" id="age" size="5" required>
+			<label for="age">лет</label>
+		</fieldset>
+		<fieldset>
+			<legend>Подробнее о себе</legend>
+			<input type="radio" name="sex" value="rad3" id="boy" required>
+			<label for="boy">Молодой человек</label><br>
+			<input type="radio" name="sex" value="rad4" id="girl" required>
+			<label for="girl">Девушка</label><br>
+			<input type="date" id="bday" name="bday" required>
+			<label for="bday">День рождения</label><br>
+			<input type="text" id="status" size="16" name="status" required>
+			<label for="status">Семейное положение</label><br>
+			<input type="text" id="soc_status" name="soc_status" size="16" required>
+			<label for="soc_status">Социальный статус</label><br>
+			<input type="text" id="location" name="location" size="16" required>
+			<label for="location">Местожительство</label><br>
+			<p class="que">Что вы обычно делаете на выходных:</p>
+			<input type="checkbox" id="sleep" name="sleep">
+			<label for="sleep">Сплю</label><br>
+			<input type="checkbox" id="walk" name="walk">
+			<label for="walk">Гуляю с друзьями</label><br>
+			<input type="checkbox" id="fishing" name="fishing">
+			<label for="fishing">Хожу на рыбалку</label><br>
+			<input type="checkbox" id="play" name="play">
+			<label for="play">Играю в игры</label>
+			<p class="que">Рассказать о формах в книге, посвященной HTML</p>
+			<select name="forms" id="forms">
+				<option value="v1" selected>Site frequency:</option>
+				<option value="v2">Site_frequency</option>
+				<option value="v3">Site frequency:</option>
+			</select>
+			<p class="que">Сколько книг вы прочитали за свою жизнь:</p>
+			<input type="radio" name="books" id="0-10" required>
+			<label for="0-10">0-10</label><br>
+			<input type="radio" name="books" id="11-20" required>
+			<label for="11-20">11-20</label><br>
+			<input type="radio" name="books" id="21-50" required>
+			<label for="21-50">21-50</label><br>
+			<input type="radio" name="books" id="50+" required>
+			<label for="50+">50+</label>
+			<p id="que">Ваши комментарии:</p>
+			<textarea name="comment" id="comment" cols="45" rows="8"></textarea>
+			<p><select name="positions" id="positions">
+				<option value="va1">Первая позиция</option>
+				<option value="va2">Вторая позиция</option>
+				<option value="va3">Третья позиция</option>
+				<option value="va4">Четвертая позиция</option>
+			</select></p>
+		</fieldset>
+
+		<fieldset>
+			<legend>
+				И в заключении
+			</legend>
+			<input type="text" placeholder="Это поле было введено до вас" readonly size="30" name="read_only">
+			<p class="que"><label for="email">Email:</label><br>
+			<input type="email" name="email" id="email" required></p>
+			<p id="que">Хотите подписаться на самую модную рассылку спама?</p>
+			<p id="mb">Выберите категории</p>
+			<input type="checkbox" name="equipment" id="equipment">
+			<label for="equipment">Оборудование</label><br>
+			<input type="checkbox" name="dinner" id="dinner">
+			<label for="dinner">Как приготовить обед</label><br>
+			<input type="checkbox" name="earn" id="earn">
+			<label for="earn">Заработай миллион за один день!</label>
+			<p class="que">На сколько сложная задача:</p>
+			<input type="radio" required name="task" id="so_ez">
+			<label for="so_ez">Совсем себе</label><br>
+			<input type="radio" required name="task" id="light">
+			<label for="light">Так себе</label><br>
+			<input type="radio" required name="task" id="hard">
+			<label for="hard">Еле справились</label>
+		</fieldset>
+		<input type="submit" name="submit_info" id="info_about">
+		</form>
+	</div>
+</body>
+</html>
